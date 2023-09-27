@@ -17,7 +17,6 @@
 .bg_header {
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(7.5px);
   padding: 11px 18px 11px 30px;
 }
 .nav_line::after,
@@ -140,7 +139,7 @@
 }
 .btn_getapp {
   backdrop-filter: blur(4px);
-  padding: 14.5px 31.5px;
+  padding: 14px 32px;
   line-height: normal;
   border: 1px solid transparent;
   transition: all 0.2s linear;
@@ -152,7 +151,7 @@
 }
 .btn_start {
   backdrop-filter: blur(4px);
-  padding: 12.5px 30px;
+  padding: 12.5px 28px;
   line-height: normal;
   border: 1px solid transparent;
   transition: all 0.2s linear;
@@ -180,21 +179,26 @@
     height: 495px !important;
   }
 }
+@media (max-width: 1200px) {
+  .welcome_width {
+    width: 100%;
+  }
+}
 @media (max-width: 767.9px) {
-  /* .phone {
+  .phone {
     position: fixed;
     right: 0;
     top: 0;
-    width: 100% !important;
-    background-color: black;
+    width: 100%;
+   background-color: black;
     height: 100vh;
-    z-index: 29;
-    border-radius: 0px 0px 0px 10px;
+    z-index: 28;
+    border-radius: 0px 0px 0px 0px;
     clip-path: circle(0px at calc(100% - 45px) 45px);
     transition: all 500ms ease-out;
     pointer-events: none;
-  } */
-  /* .left_0 {
+  }
+  .right_0 {
     right: 0;
   }
   .z_30 {
@@ -203,8 +207,45 @@
   .clip_path {
     clip-path: circle(75%);
     pointer-events: all;
-  } */
+  }
   .bg_header {
     padding: 8px 12px;
+  }
+  .accordion-item {
+    margin-top: 14px;
+  }
+  .accordion-button {
+    padding: 14px 14px 0px 14px !important;
+  }
+  .accordion-body {
+    padding: 10px 14px 0px 14px !important;
+  }
+}
+@media (max-width: 576px) {
+  .accordion-item {
+    margin-top: 12px;
+  }
+  .accordion-button {
+    padding: 12px 12px 0px 12px !important;
+  }
+  .accordion-body {
+    padding: 8px 12px 0px 12px !important;
+  }
+  .btn_pink {
+    padding: 12.5px 31.5px;
+  }
+  .join_work {
+    width: 98px !important;
+    height: 77px !important;
+  }
+  .writing_icon {
+    width: 19px !important;
+    height: 19px !important;
+  }
+  .btn_start {
+    padding: 11px 28px;
+  }
+  .btn_getapp {
+    padding: 12px 28px;
   }
 }

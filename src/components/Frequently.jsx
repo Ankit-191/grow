@@ -4,9 +4,9 @@ import { Accordion, Container } from "react-bootstrap";
 const Frequently = () => {
   return (
     <>
-      <section className="my-5 py-5">
-        <Container className="mb-5">
-          <h4 className="ff_outfit fs_5xl mb-4 pb-3 text-center">
+      <section className="my-5 py-md-5">
+        <Container className="mb-xl-5">
+          <h4 className="ff_outfit fs_5xl mb-3 mb-md-4 pb-lg-3 text-center">
             Frequently Asked Questions
           </h4>
           <Accordion defaultActiveKey="0">

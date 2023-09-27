@@ -5,10 +5,10 @@ import Pinkbtn from "./Pinkbtn";
 const Welcome = () => {
   return (
     <>
-      <section className="py-5">
-        <Container className="py-5 my-4">
-          <Row>
-            <Col className="position-relative" xl={6}>
+      <section className="py-5 my-xl-3">
+        <Container className="py-md-5 my-xl-4">
+          <Row className=" justify-content-center">
+            <Col className="position-relative" lg={7} xl={6}>
               <div className="welcome_img overflow-hidden position_xl_absolute top-0 start-0 z-0">
                 <img
                   src={welcome}
@@ -17,18 +17,18 @@ const Welcome = () => {
                 />
               </div>
             </Col>
-            <Col xl={6}>
-              <div className="bg_white p-4 position-relative z-3 mt-xl-4">
-                <h4 className="fs_4xl fw-normal clr_black mb-3 pb-1">
+            <Col lg={7} xl={6}>
+              <div className="bg_white p-md-4 px-2 pt-4 pb-2 position-relative z-3 mt-xl-4 rounded-1">
+                <h4 className="fs_4xl fw-normal clr_black mb-3 pb-md-1">
                   <span className="fw-semibold">Welcome</span> to Work Skills
                 </h4>
-                <ul className="welcome_circle">
+                <ul className="welcome_circle mb-0">
                   <li className="fs_sm fw-normal clr_gray">
                     Work Skills is built for young professionals who want to
                     enhance their soft skills to overcome the challenges they
                     often face during the early first years of work.
                   </li>
-                  <li className="fs_sm fw-normal clr_gray my-3">
+                  <li className="fs_sm fw-normal clr_gray my-md-3 my-2 py-1">
                     In a practical and growth-oriented approach, we help young
                     professionals develop and strengthen essential skills such
                     as boundaries-setting, communication, adaptability, and
@@ -39,7 +39,7 @@ const Welcome = () => {
                     navigate their careers with confidence and success.
                   </li>
                 </ul>
-                <div className="mt-5">
+                <div className="mt-xl-5 mt-4">
                   <Pinkbtn pinkbtn={"Subscribe"} />
                 </div>
               </div>
