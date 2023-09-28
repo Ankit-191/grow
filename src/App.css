@@ -2,6 +2,9 @@
   list-style: none !important;
   text-decoration: none !important;
 }
+.transition_02 {
+  transition: all 0.2s linear;
+}
 .white_space {
   white-space: nowrap;
 }
@@ -75,7 +78,7 @@
   backdrop-filter: blur(4px);
   line-height: normal;
   padding: 14.5px 34px;
-  transition: all 0.3s linear;
+  transition: all 0.2s linear;
 }
 .btn_started:hover {
   color: black;
@@ -121,19 +124,42 @@
 .view_content {
   max-width: 565px;
 }
+.d_none {
+  display: none;
+}
+.veiw_btn {
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+}
+.read_more_btn:hover {
+  color: var(--clr-pink);
+}
 /* Form section */
 .message_resize {
   resize: none;
+  height: 143px;
 }
 .form_input {
   border-radius: 5px;
   border: 1px solid #000;
   background: #fff;
   outline: none;
+  padding: 18px 19px;
 }
 .form_input::placeholder {
   color: var(--clr-black) !important;
-  
+  font-size: var(--fs-sm);
+}
+.btn_send {
+  border: 1px solid transparent;
+  padding: 10.5px 23px;
+  line-height: normal;
+}
+.btn_send:hover {
+  border: 1px solid var(--clr-pink);
+  color: #ff5cd7;
+  background-color: transparent;
+  transition: all 0.2s linear;
 }
 /*Frequently Asked Questions */
 .accordion-button {
@@ -209,6 +235,9 @@
   .vh_md_100 {
     height: 100vh;
   }
+  .position_md_absolute {
+    position: absolute;
+  }
 }
 @media (min-width: 1200px) {
   .container {
@@ -224,6 +253,12 @@
   .updated_width {
     width: 558px !important;
     height: 410px !important;
+  }
+  .translate_xl_middle_y {
+    transform: translateY(-50%) !important;
+  }
+  .start_xl_0 {
+    left: 0;
   }
 }
 @media (max-width: 1199.98px) {
@@ -265,6 +300,9 @@
   .accordion-body {
     padding: 10px 14px 0px 14px !important;
   }
+  .form_input {
+    padding: 15px 14px;
+  }
 }
 @media (max-width: 575.98px) {
   .accordion-item {
@@ -292,5 +330,15 @@
   }
   .btn_getapp {
     padding: 12px 28px;
+  }
+  .form_input {
+    padding: 10px 11px;
+  }
+  .accordion-button::after {
+    background-size: 15px !important;
+  }
+  .grow_logo {
+    width: 50px !important;
+    height: 40px !important;
   }
 }

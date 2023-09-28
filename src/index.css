@@ -55,7 +55,7 @@
   color: white;
 }
 .clr_pink {
-  color: var(--clr-pink);
+  color: var(--clr-pink) !important;
 }
 .clr_white_100 {
   color: var(--clr-white-100);

@@ -5,7 +5,7 @@ import Pinkbtn from "./Pinkbtn";
 const Welcome = () => {
   return (
     <>
-      <section className="py-5 my-xl-3">
+      <section className="py-5 my-xl-3" id="welcome">
         <Container className="py-md-5 my-xl-4">
           <Row className=" justify-content-center">
             <Col className="position-relative" lg={7} xl={6}>

@@ -5,11 +5,11 @@ import Header from "./Header";
 const Hero = () => {
   return (
     <>
-      <section className="hero_img vh_md_100 d-flex flex-column">
+      <section className="hero_img vh_md_100 d-flex flex-column" id="home">
         <Header />
         <Container className="flex-grow-1 py-5 my-sm-5">
           <div className="h-100 d-flex flex-column justify-content-center align-items-center">
-            <h1 className="fs_6xl fw-normal clr_white text-center pb-1">
+            <h1 className="fs_6xl fw-normal clr_white text-center pb-2 pb-sm-1">
               Meet <span className="fw-semibold">Work Skill </span>Your
               <span className="d-md-block">Agency for Growth</span>
             </h1>
@@ -21,7 +21,7 @@ const Hero = () => {
                 has a more-or-less norma.
               </span>
             </p>
-            <button className="fs_md fw-medium clr_white btn_started rounded-pill mt-3">
+            <button className="fs_md fw-medium clr_white btn_started rounded-pill mt-sm-3">
               Get Started
             </button>
           </div>

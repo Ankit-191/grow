@@ -10,7 +10,7 @@ const Footer = () => {
           <a href="#">
             <img src={growLogo} alt="grow logo" width={89} height={75} />
           </a>
-          <ul className="my-md-4 my-3 py-xl-2 px-0 d-flex justify-content-center gap-1 white_space">
+          <ul className="my-md-4 my-3 py-xl-2 px-0 d-flex align-items-center justify-content-center gap-1 white_space">
             <li className="fs_xsm fw-normal clr_white">
               <span className="fs_sm clr_white opacity-50">© </span>
               {new Date().getFullYear()} Lior krengle

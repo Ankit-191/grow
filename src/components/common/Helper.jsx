@@ -1,5 +1,7 @@
 import week from "../../assets/img/webp/weekFive.webp";
 import step from "../../assets/img/webp/stepThree.webp";
+import journey from "../../assets/img/webp/ourJourney.webp";
+import join from "../../assets/img/webp/joinUs.webp";
 export const FrequentlyData = [
   {
     id: 1,
@@ -29,6 +31,27 @@ export const FrequentlyData = [
 export const ViewData = [
   {
     id: 1,
+    img: join,
+    alt: "join",
+    year: "d-block",
+    heading: "Join  us on our next challenge",
+    para: "Working with feedback",
+    date: "April 9 - LIOR KRENGEL",
+    clrBtn: "clr_pink",
+    icons: "d-flex",
+  },
+  {
+    id: 2,
+    img: journey,
+    alt: "journey",
+    year: "d-block",
+    heading:
+      "Our journey comes to a close flipping the coin and the tools we have gathered",
+    para: "Together we have spent the lst five weeks exploring and practing our healthy Boundaries. We took a step back and connected  with our.....",
+    date: "March 15 - LIOR KRENGEL",
+  },
+  {
+    id: 3,
     img: week,
     alt: "week five",
     heading: "Week five: stepping into our yes with secure expectations",
@@ -36,7 +59,7 @@ export const ViewData = [
     date: "June 3 - LIOR KRENGEL",
   },
   {
-    id: 2,
+    id: 4,
     img: step,
     alt: "three step",
     heading: "Step three: exploring between our yes and no",
