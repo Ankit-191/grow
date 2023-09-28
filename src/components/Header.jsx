@@ -24,7 +24,7 @@ const Header = () => {
 
           <ul
             className={`d-flex flex-column p-0 m-0 gap-3 flex-md-row align-items-center justify-content-center phone ${
-              head ? "" : "right_0 text-center clip_path"
+              head ? "" : "right_0 text-center"
             }`}
           >
             <li>
@@ -67,7 +67,7 @@ const Header = () => {
               + Subscribe
             </button>
             <div onClick={showUl} className="z_30 d-md-none">
-              <h3 className="clr_white fs_4xl">
+              <h3 className="clr_white fs_4xl cursor_pointer mb-0">
                 {head ? <BiMenu /> : <RxCross1 />}
               </h3>
             </div>

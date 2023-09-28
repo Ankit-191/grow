@@ -2,6 +2,15 @@
   list-style: none !important;
   text-decoration: none !important;
 }
+.white_space {
+  white-space: nowrap;
+}
+.cursor_pointer {
+  cursor: pointer;
+}
+.opacity_06 {
+  opacity: 0.6;
+}
 .btn_pink {
   border: 1px solid transparent;
   padding: 14.5px 33.5px;
@@ -78,7 +87,7 @@
   border-radius: 4px;
 }
 .welcome_img img {
-  transition: all 0.1s linear;
+  transition: all 0.2s linear;
   cursor: pointer;
 }
 .welcome_img:hover img {
@@ -93,6 +102,38 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
+}
+/* Take a View section */
+.scal_img img {
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.scal_img:hover img {
+  transform: scale(1.03);
+}
+.icon_hover:hover img {
+  opacity: 0.4;
+}
+.view_border {
+  border-top: 1px solid #d7d7d7;
+  margin: 14px 0px;
+}
+.view_content {
+  max-width: 565px;
+}
+/* Form section */
+.message_resize {
+  resize: none;
+}
+.form_input {
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #fff;
+  outline: none;
+}
+.form_input::placeholder {
+  color: var(--clr-black) !important;
+  
 }
 /*Frequently Asked Questions */
 .accordion-button {
@@ -164,12 +205,14 @@
 .line_color {
   border-top: 1px solid #262b2f;
 }
+@media (min-width: 768px) {
+  .vh_md_100 {
+    height: 100vh;
+  }
+}
 @media (min-width: 1200px) {
   .container {
     max-width: 1164px !important;
-  }
-  .vh_xl_100 {
-    height: 100vh;
   }
   .position_xl_absolute {
     position: absolute;
@@ -178,35 +221,37 @@
     width: 679px !important;
     height: 495px !important;
   }
+  .updated_width {
+    width: 558px !important;
+    height: 410px !important;
+  }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199.98px) {
   .welcome_width {
     width: 100%;
   }
+  .updated_width {
+    width: 100%;
+  }
 }
-@media (max-width: 767.9px) {
+@media (max-width: 767.98px) {
   .phone {
     position: fixed;
     right: 0;
     top: 0;
     width: 100%;
-   background-color: black;
+    background-color: black;
     height: 100vh;
-    z-index: 28;
-    border-radius: 0px 0px 0px 0px;
-    clip-path: circle(0px at calc(100% - 45px) 45px);
+    z-index: -5;
     transition: all 500ms ease-out;
-    pointer-events: none;
+    opacity: 0;
   }
   .right_0 {
-    right: 0;
+    opacity: 1;
+    z-index: 28;
   }
   .z_30 {
     z-index: 30;
-  }
-  .clip_path {
-    clip-path: circle(75%);
-    pointer-events: all;
   }
   .bg_header {
     padding: 8px 12px;
@@ -221,7 +266,7 @@
     padding: 10px 14px 0px 14px !important;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 575.98px) {
   .accordion-item {
     margin-top: 12px;
   }

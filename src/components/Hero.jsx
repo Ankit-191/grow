@@ -5,7 +5,7 @@ import Header from "./Header";
 const Hero = () => {
   return (
     <>
-      <section className="hero_img vh_xl_100 d-flex flex-column">
+      <section className="hero_img vh_md_100 d-flex flex-column">
         <Header />
         <Container className="flex-grow-1 py-5 my-sm-5">
           <div className="h-100 d-flex flex-column justify-content-center align-items-center">

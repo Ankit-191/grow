@@ -10,10 +10,10 @@ const Footer = () => {
           <a href="#">
             <img src={growLogo} alt="grow logo" width={89} height={75} />
           </a>
-          <ul className="my-md-4 my-3 py-xl-2 px-0 d-flex justify-content-center gap-1">
+          <ul className="my-md-4 my-3 py-xl-2 px-0 d-flex justify-content-center gap-1 white_space">
             <li className="fs_xsm fw-normal clr_white">
-              <span className="fs_sm clr_white opacity-50">© </span>2023 Lior
-              krengle
+              <span className="fs_sm clr_white opacity-50">© </span>
+              {new Date().getFullYear()} Lior krengle
             </li>
             <li className="clr_white">
               .
@@ -43,19 +43,21 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <button className="fs_md fw-semibold clr_black btn_start bg_white rounded-pill">
-            <img
-              src={writing}
-              alt="writing"
-              className="me-1 writing_icon"
-              width={24}
-              height={24}
-            />
-            Start Writing
-          </button>
-          <button className="fs_md fw-semibold clr_black btn_getapp bg_white rounded-pill ms-sm-4 ms-3">
-            Get the app
-          </button>
+          <div className=" d-flex justify-content-center gap-sm-4 gap-2 ">
+            <button className="fs_md fw-semibold clr_black btn_start bg_white rounded-pill">
+              <img
+                src={writing}
+                alt="writing"
+                className="me-1 writing_icon"
+                width={24}
+                height={24}
+              />
+              Start Writing
+            </button>
+            <button className="fs_md fw-semibold clr_black btn_getapp bg_white rounded-pill">
+              Get the app
+            </button>
+          </div>
           <div className="line_color my-md-4 my-3"></div>
           <p className="fs_xsm clr_white opacity-50 mb-0 pt-xl-1">
             <span className="text-decoration-underline">Substack</span> is the
