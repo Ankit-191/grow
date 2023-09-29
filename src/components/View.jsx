@@ -1,9 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import like from "../assets/img/svg/like.svg";
-import comment from "../assets/img/svg/chatbubble.svg";
-import upload from "../assets/img/svg/upload.svg";
 import { ViewData } from "./common/Helper";
+import { ChatBox, Like, Share } from "./common/icons/Svg";
 const View = () => {
   return (
     <>
@@ -60,30 +58,17 @@ const View = () => {
                           href="#"
                           className="fw-semibold fs_lg clr_black lh_normal icon_hover"
                         >
-                          <img
-                            src={like}
-                            alt="like"
-                            className="transition_02"
-                          />
-                          2
+                          <Like /> 2
                         </a>
                       </Col>
                       <Col className="text-center">
                         <a href="#" className="icon_hover">
-                          <img
-                            src={comment}
-                            alt="comment"
-                            className="transition_02"
-                          />
+                          <ChatBox />
                         </a>
                       </Col>
                       <Col className="text-end">
                         <a href="#" className="icon_hover">
-                          <img
-                            src={upload}
-                            alt="upload"
-                            className="transition_02"
-                          />
+                          <Share />
                         </a>
                       </Col>
                     </Row>

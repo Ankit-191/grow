@@ -2,8 +2,7 @@ import React from "react";
 import updated from "../assets/img/webp/updated.webp";
 import { Col, Container, Row } from "react-bootstrap";
 import message from "../assets/img/svg/message.svg";
-import instagram from "../assets/img/svg/instagram.svg";
-import linkdin from "../assets/img/svg/linkedin.svg";
+import { Instagram, Linkdin } from "./common/icons/Svg";
 const Form = () => {
   return (
     <>
@@ -21,7 +20,8 @@ const Form = () => {
               <div className="bg_white_300 email_bg_shadow position_md_absolute bottom-0 z-3 px-md-4 px-3 py-3 rounded-1 translate_xl_middle_y start_xl_0">
                 <div className="pt-1">
                   <a
-                    href="mailto:Stepenjohns@gmail.com" target="_blank"
+                    href="mailto:Stepenjohns@gmail.com"
+                    target="_blank"
                     className="fw-normal fs_lg clr_black lh_normal mb-0 d-flex gap-3 align-items-center mail_hover transition_02"
                   >
                     <img src={message} alt="message" />
@@ -29,23 +29,11 @@ const Form = () => {
                   </a>
                 </div>
                 <div className="d-flex gap-2 mt-2 py-1">
-                  <a
-                    href="https://www.instagram.com/"
-                    target="blank"
-                    className="scal_img"
-                  >
-                    <img src={instagram} alt="instagram" />
+                  <a href="https://www.instagram.com/" target="blank">
+                    <Instagram />
                   </a>
-                  <a
-                    href="https://in.linkedin.com/"
-                    target="blank"
-                    className="scal_img"
-                  >
-                    <img
-                      src={linkdin}
-                      alt="linkdin"
-                      className="transition_02"
-                    />
+                  <a href="https://in.linkedin.com/" target="blank">
+                    <Linkdin />
                   </a>
                 </div>
               </div>
