@@ -33,18 +33,20 @@ export const ViewData = [
     id: 1,
     img: join,
     alt: "join",
-    year: "d-block",
+    year: "d-block mb-2 mb-lg-3 pb-sm-1 pb-lg-0",
     heading: "Join  us on our next challenge",
     para: "Working with feedback",
     date: "April 9 - LIOR KRENGEL",
     clrBtn: "clr_pink",
     icons: "d-flex",
+    spancing: "mb-2 mb-lg-3 pb-sm-1 pb-lg-0",
   },
   {
     id: 2,
     img: journey,
     alt: "journey",
-    year: "d-block",
+    year: "d-block mb-2 pb-sm-1",
+    spancing: "mb-2 pb-sm-1",
     heading:
       "Our journey comes to a close flipping the coin and the tools we have gathered",
     para: "Together we have spent the lst five weeks exploring and practing our healthy Boundaries. We took a step back and connected  with our.....",
@@ -57,6 +59,7 @@ export const ViewData = [
     heading: "Week five: stepping into our yes with secure expectations",
     para: "Our yes is only human too",
     date: "June 3 - LIOR KRENGEL",
+    spancing: "mb-2 mb-lg-3 pb-sm-1 pb-lg-0",
   },
   {
     id: 4,
@@ -65,5 +68,6 @@ export const ViewData = [
     heading: "Step three: exploring between our yes and no",
     para: "A week of international curiosity",
     date: "July 21 - LIOR KRENGEL",
+    spancing: "mb-2 mb-lg-3 pb-sm-1 pb-lg-0",
   },
 ];

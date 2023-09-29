@@ -1,14 +1,12 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import join from "../assets/img/webp/joinUs.webp";
 import like from "../assets/img/svg/like.svg";
 import comment from "../assets/img/svg/chatbubble.svg";
 import upload from "../assets/img/svg/upload.svg";
-import journey from "../assets/img/webp/ourJourney.webp";
 const View = ({ view }) => {
   return (
     <>
-      <section className="py-5 my-xl-3" id="view_section">
+      <section className="pt-5 pb-5 pb-xl-2 my-xl-3" id="view_section">
         <Container className="my-xl-5 my-md-5">
           <h4 className="fs_4xl fw-normal clr_black text-center mb-xl-5">
             Let’s Take a <span className="fw-semibold">View</span>
@@ -34,17 +32,19 @@ const View = ({ view }) => {
                 <Col md={8} lg={7}>
                   <div className="view_content mt-lg-0 mt-md-4 mt-3">
                     <p
-                      className={`fw-semibold fs_md clr_pink lh_normal mb-2 mb-lg-3 pb-sm-1 pb-lg-0 d_none ${data.year}`}
+                      className={`fw-semibold fs_md clr_pink lh_normal d_none ${data.year}`}
                     >
                       July 2023
                     </p>
-                    <h6 className="fw-semibold fs_xl clr_black mb-lg-3 pb-sm-1 pb-lg-0 lh_normal">
+                    <h6
+                      className={`fw-semibold fs_xl clr_black lh_normal ${data.spancing}`}
+                    >
                       {data.heading}
                     </h6>
-                    <p className="fw-normal fs_sm clr_gray mb-2 mb-lg-3 pb-sm-1 pb-lg-0">
+                    <p className={`fw-normal fs_sm clr_gray ${data.spancing}`}>
                       {data.para}
                     </p>
-                    <p className="fw-normal fs_xsm clr_gray mb-2 mb-lg-3 pb-sm-1 pb-lg-0">
+                    <p className={`fw-normal fs_xsm clr_gray ${data.spancing}`}>
                       {data.date}
                     </p>
                     <a
@@ -53,7 +53,7 @@ const View = ({ view }) => {
                     >
                       Read more
                     </a>
-                    <Row className={`mt-4 d-none ${data.icons}`}>
+                    <Row className={`mt-3 d_none ${data.icons}`}>
                       <Col>
                         <a
                           href="#"

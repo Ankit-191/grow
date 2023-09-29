@@ -11,7 +11,7 @@ const Hero = () => {
           <div className="h-100 d-flex flex-column justify-content-center align-items-center">
             <h1 className="fs_6xl fw-normal clr_white text-center pb-2 pb-sm-1">
               Meet <span className="fw-semibold">Work Skill </span>Your
-              <span className="d-md-block">Agency for Growth</span>
+              <span className="d-block">Agency for Growth</span>
             </h1>
             <p className="fs_sm fw-normal clr_white_100 text-center pb-1">
               It is a long established fact that a reader will be distracted by

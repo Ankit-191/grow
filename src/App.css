@@ -48,13 +48,13 @@
   top: -1px;
 }
 .nav_line:hover.nav_line::after {
-  width: 14px;
+  width: 100%;
 }
 .nav_line:hover.nav_line::before {
-  width: 14px;
+  width: 100%;
 }
 .btn_subscribe {
-  padding: 15px 30px;
+  padding: 13.5px 29.5px;
   line-height: normal;
   border: 1px solid transparent;
   transition: all 0.2s linear;
@@ -125,7 +125,7 @@
   max-width: 565px;
 }
 .d_none {
-  display: none;
+  display: none !important;
 }
 .veiw_btn {
   padding-left: 60px !important;
@@ -140,14 +140,23 @@
   height: 143px;
 }
 .form_input {
-  border-radius: 5px;
-  border: 1px solid #000;
-  background: #fff;
+  border: none;
   outline: none;
   padding: 18px 19px;
 }
+.liner_border {
+  background: linear-gradient(180deg, #cccccc 0%, #ffff 55%);
+  border-radius: 5px;
+  display: inline-block;
+  padding: 1px;
+}
+.liner_border .border_bg {
+  background: white;
+  display: block;
+  border-radius: 4px;
+}
 .form_input::placeholder {
-  color: var(--clr-black) !important;
+  color: #808080 !important;
   font-size: var(--fs-sm);
 }
 .btn_send {
@@ -160,6 +169,12 @@
   color: #ff5cd7;
   background-color: transparent;
   transition: all 0.2s linear;
+}
+.email_bg_shadow {
+  box-shadow: 0px 1px 40px 0px rgba(0, 0, 0, 0.1);
+}
+.form_bg_shadow {
+  box-shadow: 0px 8px 26px 0px rgba(0, 0, 0, 0.05);
 }
 /*Frequently Asked Questions */
 .accordion-button {

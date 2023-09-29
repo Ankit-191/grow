@@ -22,6 +22,7 @@
   --clr-white-100: rgba(255, 255, 255, 0.7);
   --clr-gray: rgba(0, 0, 0, 0.7);
   --clr-white-200: #efefef;
+  --clr-white-300: #faf8f8;
   --clr-black: black;
   --clr-primary-black: #0d0d0d;
 }
@@ -78,6 +79,9 @@
 }
 .bg_white_200 {
   background-color: var(--clr-white-200);
+}
+.bg_white_300 {
+  background-color: var(--clr-white-300);
 }
 /* LINE HEIGHT */
 .lh_normal {

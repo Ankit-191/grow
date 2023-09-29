@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <section className="bg_footer py-xl-4 pt-md-5 pb-4">
-        <Container className="text-center pt-5 py-1">
+        <Container className="text-center pt-5 pt-xl-0 py-1">
           <a href="#">
             <img src={growLogo} alt="grow logo" width={89} height={75} />
           </a>
