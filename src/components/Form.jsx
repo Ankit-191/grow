@@ -7,10 +7,10 @@ import linkdin from "../assets/img/svg/linkedin.svg";
 const Form = () => {
   return (
     <>
-      <section className="py-5" id="form">
+      <section className="py-xl-5" id="form">
         <Container className="py-md-5">
           <Row className=" justify-content-center">
-            <Col className="position-relative" lg={7} xl={5}>
+            <Col className="position-relative" lg={8} xl={5}>
               <div className="scal_img overflow-hidden position_xl_absolute top-0 start-0 z-0">
                 <img
                   src={updated}
@@ -19,13 +19,14 @@ const Form = () => {
                 />
               </div>
               <div className="bg_white_300 email_bg_shadow position_md_absolute bottom-0 z-3 px-md-4 px-3 py-3 rounded-1 translate_xl_middle_y start_xl_0">
-                <div className="d-flex align-items-center gap-3 pt-1">
-                  <a href="#">
+                <div className="pt-1">
+                  <a
+                    href="mailto:Stepenjohns@gmail.com" target="_blank"
+                    className="fw-normal fs_lg clr_black lh_normal mb-0 d-flex gap-3 align-items-center mail_hover transition_02"
+                  >
                     <img src={message} alt="message" />
-                  </a>
-                  <p className="fw-normal fs_lg clr_black lh_normal mb-0">
                     Stepenjohns@gmail.com
-                  </p>
+                  </a>
                 </div>
                 <div className="d-flex gap-2 mt-2 py-1">
                   <a
@@ -49,7 +50,7 @@ const Form = () => {
                 </div>
               </div>
             </Col>
-            <Col lg={7} xl={7} className="ps-xl-0">
+            <Col lg={8} xl={7} className="ps-xl-0">
               <div className="bg_white_300 px-xl-5 px-sm-4 py-sm-4 p-3 position-relative mt-xl-5 mt-4 z-3 rounded-1 form_bg_shadow">
                 <h4 className="fs_4xl fw-normal clr_black lh_normal mb-3">
                   Get <span className="fw-semibold">Updated</span> With Us

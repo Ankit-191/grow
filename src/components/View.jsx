@@ -18,7 +18,7 @@ const View = () => {
                 key={data.id}
                 className="justify-content-lg-between justify-content-center"
               >
-                <Col sm={12} className="py-md-2 py-1">
+                <Col md={8} lg={12} className="py-md-2 py-1">
                   <div className="view_border"></div>
                 </Col>
                 <Col md={8} lg={4}>
@@ -92,8 +92,8 @@ const View = () => {
               </Row>
             );
           })}
-          <Row>
-            <Col sm={12} className="py-md-2 py-1">
+          <Row className="justify-content-center">
+            <Col md={8} lg={12} className="py-md-2 py-1">
               <div className="view_border"></div>
             </Col>
           </Row>

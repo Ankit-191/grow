@@ -29,12 +29,14 @@ const Header = () => {
                 head ? "" : "right_0 text-center"
               }`}
             >
-              {NavData.map((data) => {
+              {NavData.map((data, index) => {
                 return (
-                  <li key={data.id}>
+                  <li key={index}>
                     <a
                       href={data.hrefLink}
-                      className="fs_sm fw-normal clr_white position-relative nav_line"
+                      className={`fs_sm fs_md_sm fw-normal clr_white position-relative ${
+                        index === 0 ? "active_link" : "nav_line"
+                      }`}
                       onClick={() => sethead(true)}
                     >
                       {data.navContent}
@@ -42,7 +44,7 @@ const Header = () => {
                   </li>
                 );
               })}
-              <li className="fs_md fw-medium bg_white rounded-pill btn_subscribe d-md-none">
+              <li className="fs_md fs_md_sm fw-medium bg_white rounded-pill btn_subscribe d-md-none">
                 + Subscribe
               </li>
             </ul>
@@ -50,9 +52,9 @@ const Header = () => {
               + Subscribe
             </button>
             <div onClick={showUl} className="z_30 d-md-none">
-              <h3 className="clr_white fs_4xl cursor_pointer mb-0">
+              <span className="clr_white fs_6xl cursor_pointer mb-0">
                 {head ? <BiMenu /> : <RxCross1 />}
-              </h3>
+              </span>
             </div>
           </div>
         </Container>

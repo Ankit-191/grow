@@ -19,8 +19,8 @@
   --lh-normal: normal;
   --clr-white: white;
   --clr-pink: #ff5cd7;
-  --clr-white-100: rgba(255, 255, 255, 0.7);
-  --clr-gray: rgba(0, 0, 0, 0.7);
+  --clr-white-100: #cdc8c9;
+  --clr-gray: #4b4a4a;
   --clr-white-200: #efefef;
   --clr-white-300: #faf8f8;
   --clr-gray-100: #808080;
@@ -108,7 +108,7 @@
     --fs-6xl: 58px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   :root {
     --fs-xsm: 14px;
     --fs-sm: 16px;
@@ -118,6 +118,9 @@
     --fs-4xl: 30px;
     --fs-5xl: 38px;
     --fs-6xl: 48px;
+  }
+  .fs_md_sm {
+    font-size: 20px;
   }
 }
 @media (max-width: 576px) {
