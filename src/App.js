@@ -8,13 +8,17 @@ import Frequently from "./components/Frequently";
 import { ViewData } from "./components/common/Helper";
 import View from "./components/View";
 import Form from "./components/Form";
+import Preloder from "./components/Preloder";
+import BackToTop from "./components/BackToTop";
 function App() {
   return (
     <>
+      <Preloder />
+      <BackToTop />
       <Hero />
       <Welcome />
       <Joinwork />
-      <View view={ViewData} />
+      <View />
       <Form />
       <Frequently />
       <Footer />

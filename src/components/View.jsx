@@ -3,7 +3,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import like from "../assets/img/svg/like.svg";
 import comment from "../assets/img/svg/chatbubble.svg";
 import upload from "../assets/img/svg/upload.svg";
-const View = ({ view }) => {
+import { ViewData } from "./common/Helper";
+const View = () => {
   return (
     <>
       <section className="pt-5 pb-5 pb-xl-2 my-xl-3" id="view_section">
@@ -11,7 +12,7 @@ const View = ({ view }) => {
           <h4 className="fs_4xl fw-normal clr_black text-center mb-xl-5">
             Let’s Take a <span className="fw-semibold">View</span>
           </h4>
-          {view.map((data) => {
+          {ViewData.map((data) => {
             return (
               <Row
                 key={data.id}
@@ -32,12 +33,12 @@ const View = ({ view }) => {
                 <Col md={8} lg={7}>
                   <div className="view_content mt-lg-0 mt-md-4 mt-3">
                     <p
-                      className={`fw-semibold fs_md clr_pink lh_normal d_none ${data.year}`}
+                      className={`fw-medium fs_md clr_pink lh_normal d_none ${data.year}`}
                     >
                       July 2023
                     </p>
                     <h6
-                      className={`fw-semibold fs_xl clr_black lh_normal ${data.spancing}`}
+                      className={`fw-medium fs_xl clr_black lh_normal ${data.spancing}`}
                     >
                       {data.heading}
                     </h6>
@@ -49,7 +50,7 @@ const View = ({ view }) => {
                     </p>
                     <a
                       href="#"
-                      className={`fw-semibold fs_md clr_black text-decoration-underline lh_normal read_more_btn transition_02 ${data.clrBtn}`}
+                      className={`fw-medium fs_md clr_black text-decoration-underline lh_normal read_more_btn transition_02 ${data.clrBtn}`}
                     >
                       Read more
                     </a>

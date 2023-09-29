@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import welcome from "../assets/img/webp/welcome.webp";
 import Pinkbtn from "./Pinkbtn";
+import { WelcomeData } from "./common/Helper";
 const Welcome = () => {
   return (
     <>
@@ -22,22 +23,17 @@ const Welcome = () => {
                 <h4 className="fs_4xl fw-normal clr_black mb-3 pb-md-1">
                   <span className="fw-semibold">Welcome</span> to Work Skills
                 </h4>
-                <ul className="welcome_circle mb-0 ps-3">
-                  <li className="fs_sm fw-normal clr_gray">
-                    Work Skills is built for young professionals who want to
-                    enhance their soft skills to overcome the challenges they
-                    often face during the early first years of work.
-                  </li>
-                  <li className="fs_sm fw-normal clr_gray my-md-3 my-2 py-sm-1">
-                    In a practical and growth-oriented approach, we help young
-                    professionals develop and strengthen essential skills such
-                    as boundaries-setting, communication, adaptability, and
-                    others.
-                  </li>
-                  <li className="fs_sm fw-normal clr_gray">
-                    In this way, we aim to empower young professionals to
-                    navigate their careers with confidence and success.
-                  </li>
+                <ul className="welcome_circle mb-0">
+                  {WelcomeData.map((data) => {
+                    return (
+                      <li
+                        key={data.id}
+                        className={`fs_sm fw-normal clr_gray ${data.spacing}`}
+                      >
+                        {data.content}
+                      </li>
+                    );
+                  })}
                 </ul>
                 <div className="mt-xl-5 mt-sm-4 mt-3">
                   <Pinkbtn pinkbtn={"Subscribe"} />

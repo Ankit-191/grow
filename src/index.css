@@ -23,6 +23,7 @@
   --clr-gray: rgba(0, 0, 0, 0.7);
   --clr-white-200: #efefef;
   --clr-white-300: #faf8f8;
+  --clr-gray-100: #808080;
   --clr-black: black;
   --clr-primary-black: #0d0d0d;
 }
@@ -69,6 +70,9 @@
 }
 .clr_primary_black {
   color: var(--clr-primary-black);
+}
+.clr_gray_100 {
+  color: var(--clr-gray-100);
 }
 /* BACK GROUND COLOR */
 .bg_white {

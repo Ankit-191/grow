@@ -3,6 +3,8 @@ import { Container } from "react-bootstrap";
 import growLogo from "../assets/img/webp/grow-logo.webp";
 import { RxCross1 } from "react-icons/rx";
 import { BiMenu } from "react-icons/bi";
+import { NavData } from "./common/Helper";
+import { Logo } from "./common/icons/Svg";
 const Header = () => {
   const [head, sethead] = useState(true);
   function showUl() {
@@ -19,13 +21,7 @@ const Header = () => {
         <Container>
           <div className="d-flex align-items-center justify-content-between rounded-pill bg_header">
             <a href="#">
-              <img
-                src={growLogo}
-                alt="grow logo"
-                className="grow_logo"
-                width={63}
-                height={53}
-              />
+              <Logo />
             </a>
 
             <ul
@@ -33,42 +29,19 @@ const Header = () => {
                 head ? "" : "right_0 text-center"
               }`}
             >
-              <li>
-                <a
-                  href="#home"
-                  className="fs_sm fw-normal clr_white position-relative nav_line"
-                  onClick={() => sethead(true)}
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#welcome"
-                  className="fs_sm fw-normal clr_white position-relative nav_line"
-                  onClick={() => sethead(true)}
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#form"
-                  className="fs_sm fw-normal clr_white position-relative nav_line"
-                  onClick={() => sethead(true)}
-                >
-                  Article
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#view_section"
-                  className="fs_sm fw-normal clr_white position-relative nav_line"
-                  onClick={() => sethead(true)}
-                >
-                  Events
-                </a>
-              </li>
+              {NavData.map((data) => {
+                return (
+                  <li key={data.id}>
+                    <a
+                      href={data.hrefLink}
+                      className="fs_sm fw-normal clr_white position-relative nav_line"
+                      onClick={() => sethead(true)}
+                    >
+                      {data.navContent}
+                    </a>
+                  </li>
+                );
+              })}
               <li className="fs_md fw-medium bg_white rounded-pill btn_subscribe d-md-none">
                 + Subscribe
               </li>

@@ -2,6 +2,47 @@ import week from "../../assets/img/webp/weekFive.webp";
 import step from "../../assets/img/webp/stepThree.webp";
 import journey from "../../assets/img/webp/ourJourney.webp";
 import join from "../../assets/img/webp/joinUs.webp";
+
+export const NavData = [
+  {
+    id: 1,
+    hrefLink: "#home",
+    navContent: "Home",
+  },
+  {
+    id: 2,
+    hrefLink: "#welcome",
+    navContent: "About",
+  },
+  {
+    id: 3,
+    hrefLink: "#form",
+    navContent: "Article",
+  },
+  {
+    id: 4,
+    hrefLink: "#view_section",
+    navContent: "Events",
+  },
+];
+export const WelcomeData = [
+  {
+    id: 1,
+    content:
+      "Work Skills is built for young professionals who want to enhance their soft skills to overcome the challenges they often face during the early first years of work.",
+  },
+  {
+    id: 2,
+    spacing: "my-md-3 my-2 py-sm-1",
+    content:
+      "In a practical and growth-oriented approach, we help young professionals develop and strengthen essential skills such as boundaries-setting, communication, adaptability, and others.",
+  },
+  {
+    id: 3,
+    content:
+      "In this way, we aim to empower young professionals to navigate their careers with confidence and success.",
+  },
+];
 export const FrequentlyData = [
   {
     id: 1,

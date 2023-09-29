@@ -52,7 +52,7 @@ const Form = () => {
             <Col lg={7} xl={7} className="ps-xl-0">
               <div className="bg_white_300 px-xl-5 px-sm-4 py-sm-4 p-3 position-relative mt-xl-5 mt-4 z-3 rounded-1 form_bg_shadow">
                 <h4 className="fs_4xl fw-normal clr_black lh_normal mb-3">
-                  Get <span>Updated</span> With Us
+                  Get <span className="fw-semibold">Updated</span> With Us
                 </h4>
                 <p className="fw-semibold fs_sm clr_black opacity_06">
                   The Big Oxmox advised her not to do so, because there were
@@ -66,7 +66,7 @@ const Form = () => {
                         <input
                           type="text"
                           placeholder="Your Name"
-                          className="fs_sm fw-normal clr_black border_bg form_input w-100 lh_normal"
+                          className="fs_sm fw-normal clr_gray_100 border_bg form_input w-100 lh_normal"
                         />
                       </div>
                     </Col>
@@ -75,7 +75,7 @@ const Form = () => {
                         <input
                           type="text"
                           placeholder="Your Email Address"
-                          className="fs_sm fw-normal clr_black border_bg form_input w-100 lh_normal"
+                          className="fs_sm fw-normal clr_gray_100 border_bg form_input w-100 lh_normal"
                         />
                       </div>
                     </Col>
@@ -83,7 +83,7 @@ const Form = () => {
                   <div className="liner_border w-100 mt-3">
                     <textarea
                       placeholder="Message"
-                      className="fs_sm fw-normal clr_black w-100 border_bg message_resize form_input lh_normal"
+                      className="fs_sm fw-normal clr_gray_100 w-100 border_bg message_resize form_input lh_normal"
                     ></textarea>
                   </div>
                   <button className="fs_md fw-semibold clr_white btn_send rounded-pill bg_pink lh_normal mt-sm-4 mt-3">
