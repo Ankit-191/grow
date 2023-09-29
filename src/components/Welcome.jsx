@@ -14,7 +14,7 @@ const Welcome = () => {
                 <img
                   src={welcome}
                   alt="Work Skills"
-                  className="welcome_width"
+                  className="welcome_width rounded-1"
                 />
               </div>
             </Col>

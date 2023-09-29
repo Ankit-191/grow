@@ -48,7 +48,7 @@ const Footer = () => {
               <img
                 src={writing}
                 alt="writing"
-                className="me-1 writing_icon"
+                className="me-2 writing_icon"
                 width={24}
                 height={24}
               />
