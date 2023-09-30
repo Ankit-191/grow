@@ -8,7 +8,7 @@ const Welcome = () => {
     <>
       <section className="py-5 my-xl-3" id="welcome">
         <Container className="py-md-5 my-xl-4">
-          <Row className="justify-content-center align-items-center align-items-lg-start">
+          <Row className="justify-content-center align-items-center align-items-xl-start">
             <Col className="position-relative" lg={6} xl={6}>
               <div className="welcome_img overflow-hidden position_xl_absolute top-0 start-0 z-0">
                 <img
